@@ -8,8 +8,10 @@ Version 1.1 tested on ubuntu-xenial-621.208 stemcell.
 
 First login to bosh and set the environment variables. (Can be taken from OpsManager- BOSH Director Tile -> Credentials Tab -> Bosh Commandline Credentials) 
 
-Extract the installation file
+Download and Extract the installation file
 ~~~~
+https://github.com/natke889/trident-iscsi/releases/download/1.1/trident-iscsi-v1.1-ubuntu-xenial-621.208.tar.gz
+
 tar -zxvf trident-iscsi-v1.1-ubuntu-xenial-621.208.tar.gz
 ~~~~
 
