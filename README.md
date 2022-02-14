@@ -10,9 +10,7 @@ First login to bosh and set the environment variables. (Can be taken from OpsMan
 
 Upload the addon release to bosh.
 ~~~~
-...
 bosh upload-release ./trident-iscsi-v1.1-ubuntu-xenial-621.208.tgz
-...
 ~~~~
 
 Update bosh config with the new addon release.
