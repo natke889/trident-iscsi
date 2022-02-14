@@ -17,7 +17,7 @@ bosh upload-release ./trident-iscsi-v1.1-ubuntu-xenial-621.208.tgz
 
 Update bosh config with the new addon release.
 ~~~~
-bosh -n update-config --name=trident-iscsi-addon --type=runtime ./trident-iscsi-manifest.yml
+bosh -n update-config --name=trident-iscsi-addon --type=runtime ./trident-iscsi-addons.yml
 ~~~~
 
 Applying to kubernetes cluster by upgrade errand
