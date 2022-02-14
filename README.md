@@ -8,14 +8,19 @@ Version 1.1 tested on ubuntu-xenial-621.208 stemcell.
 
 First login to bosh and set the environment variables. (Can be taken from OpsManager- BOSH Director Tile -> Credentials Tab -> Bosh Commandline Credentials) 
 
+Extract the installation file
+~~~~
+tar -zxvf trident-iscsi-v1.1-ubuntu-xenial-621.208.tar.gz
+~~~~
+
 Upload the addon release to bosh.
 ~~~~
-bosh upload-release ./trident-iscsi-v1.1-ubuntu-xenial-621.208.tgz
+bosh upload-release ./trident-iscsi-release.tgz
 ~~~~
 
 Update bosh config with the new addon release.
 ~~~~
-bosh -n update-config --name=trident-iscsi-addon --type=runtime ./trident-iscsi-addons.yml
+bosh -n update-config --name=trident-iscsi-addon --type=runtime ./trident-iscsi-addon.yml
 ~~~~
 
 Applying to kubernetes cluster by upgrade errand
